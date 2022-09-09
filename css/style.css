@@ -1,0 +1,339 @@
+.my_s {
+    font-size: 30px;
+    color: white;
+    /*min-height: 1080px;*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.very_beginning {
+    justify-content: start;
+    background: url("../images/bg/main bg.jpg") 0 0/cover no-repeat;
+}
+
+.first_section {
+    background: url("../images/bg/01 bg.jpg") center/cover no-repeat;
+}
+
+.second_section {
+    background: url("../images/bg/02 bg.jpg") center/cover no-repeat;
+}
+
+.third_section {
+    background: url("../images/bg/03 bg.jpg") center/cover no-repeat;
+}
+
+.fourth_section {
+    background: url("../images/bg/04 bg.jpg") center/cover no-repeat;
+}
+
+.fifth_section {
+    background: url("../images/bg/05 bg.jpg") center/cover no-repeat;
+}
+
+.footer {
+    background: url("../images/bg/footer bg.jpg") center/cover no-repeat;
+}
+
+.main_section {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+}
+
+.section {
+    height: 100vh;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    height: 196px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.logo {
+    margin-left: 150px;
+    font-size: 36px;
+
+}
+
+.many {
+    font-weight: 900;
+    color: white;
+}
+
+.money {
+    color: rgba(255, 255, 255, 0.47);
+    font-weight: 400;
+}
+
+.telegram_btn {
+    width: 254px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(96, 96, 96, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 42px;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 150px;
+}
+
+.telegram_btn__icon {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    background: url("../images/icons/Vector.png") center/contain no-repeat;
+}
+
+.text, .footer_text {
+    max-width: 1200px;
+    width: auto;
+    font-weight: 700;
+}
+
+.main_text {
+    margin-top: 190px;
+    max-width: 1200px;
+    width: auto;
+}
+
+.text__title {
+    font-weight: 900;
+    font-size: 96px;
+    margin-bottom: 85px;
+    position: relative;
+    z-index: 0;
+}
+
+.first_section, .second_section, .fifth_section {
+    color: #242424;
+}
+
+.image {
+    position: absolute;
+    top: -52px;
+    left: -103px;
+    z-index: -1;
+}
+
+ul {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 80px !important;
+}
+
+li a {
+    min-height: 22px !important;
+    max-width: 6px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+li a.active span {
+    background: white !important;
+}
+
+a.active, a.active span {
+    width: 6px !important;
+    height: 54px !important;
+}
+
+li {
+    min-height: 22px !important;
+    height: auto !important;
+    display: flex;
+    max-width: 6px !important;
+    margin: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all ease !important;
+}
+
+ul li a span {
+    min-height: 22px;
+    max-width: 6px;
+    min-width: 6px;
+    border-radius: 110px !important;
+    margin: 0 !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 8px rgba(96, 96, 96, 0.25);
+    backdrop-filter: blur(15px);
+    transition: all 0.4s linear !important;
+    display: block;
+}
+
+ul li a span.white {
+    background: rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 4px 8px rgba(96, 96, 96, 0.25) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 110px;
+}
+
+ul li a.active span.white {
+    background: black !important;
+}
+
+@media (max-width: 1635px) {
+    ul {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 1465px) {
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1260px) {
+    .text, .main_text, .footer_text {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .text, .main_text, .footer_text {
+        max-width: 800px;
+    }
+
+    .main_text{
+        margin-top: 100px;
+    }
+
+    .text__title {
+        font-size: 76px;
+    }
+
+    .image {
+        top: -43px;
+        left: -85px;
+    }
+}
+
+@media(max-width: 880px){
+    .text, .main_text, .footer_text {
+        max-width: 600px;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .telegram_btn{
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 830px) {
+    .text, .main_text, .footer_text {
+        font-size: 24px;
+    }
+
+    .text__title {
+        font-size: 60px;
+    }
+    .image {
+        top: -30px;
+        left: -60px;
+    }
+}
+
+@media (max-width: 680px){
+    .text, .main_text, .footer_text {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 630px) {
+    .text__title {
+        font-size: 48px;
+    }
+    .text, .main_text, .footer_text {
+        font-size: 19px;
+    }
+
+    .footer_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_btn{
+        margin-right: 0;
+    }
+    .first_btn{
+        width: 65px;
+        justify-content: center;
+        padding: 0;
+    }
+    .image {
+        top: -21px;
+        left: -40px;
+    }
+}
+
+@media (max-width: 510px) {
+    .text__title {
+        font-size: 38px;
+    }
+    .image {
+        top: -30px;
+        left: -40px;
+    }
+}
+
+@media (max-width: 420px){
+    .text__title {
+        font-size: 30px;
+    }
+    .first_btn{
+        margin-right: 20px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .image {
+        top: -38px;
+        left: -40px;
+    }
+}
+
+
+
+
+

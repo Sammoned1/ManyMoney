@@ -1,0 +1,54 @@
+new fullpage('#fullPage', {
+    autoScrolling: true,
+    navigation: true,
+    navigationPosition: 'left',
+    credits: false,
+})
+
+
+let sections = document.querySelectorAll('.section')
+let scroll_items = document.querySelectorAll('li span')
+let nav_items = document.querySelectorAll('li')
+
+const scroll_handler = () => {
+    sections.forEach(section => {
+        if (section.classList.contains('active')) {
+            if (section.classList.contains('white')) {
+                scroll_items.forEach(scroll_item => {
+                    if (!scroll_item.classList.contains('white'))
+                        scroll_item.classList.add('white')
+                })
+            } else {
+                scroll_items.forEach(scroll_item => {
+                    if (scroll_item.classList.contains('white')) {
+                        scroll_item.classList.remove('white')
+                    }
+                })
+            }
+        }
+    })
+}
+
+window.addEventListener('wheel', () => {
+    scroll_handler()
+})
+
+window.addEventListener('keyup', e => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        scroll_handler()
+    }
+})
+
+window.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        scroll_handler()
+    }
+})
+
+nav_items.forEach(nav_item => {
+    nav_item.addEventListener('click', () => {
+        setTimeout(scroll_handler, 100)
+        clearTimeout()
+    })
+})
+
