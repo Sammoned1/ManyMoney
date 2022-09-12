@@ -9,6 +9,9 @@ new fullpage('#fullPage', {
 let sections = document.querySelectorAll('.section')
 let scroll_items = document.querySelectorAll('li span')
 let nav_items = document.querySelectorAll('li')
+let page = document.querySelector('#fullPage')
+console.log(window.innerHeight)
+console.log(page.pageYOffset)
 
 const scroll_handler = () => {
     sections.forEach(section => {
@@ -31,6 +34,7 @@ const scroll_handler = () => {
 
 window.addEventListener('wheel', () => {
     scroll_handler()
+    console.log(document.body.offsetTop)
 })
 
 window.addEventListener('keyup', e => {
@@ -43,6 +47,10 @@ window.addEventListener('keydown', e => {
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
         scroll_handler()
     }
+})
+
+window.addEventListener('drag', () => {
+    console.log('drag!')
 })
 
 nav_items.forEach(nav_item => {
