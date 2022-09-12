@@ -1,9 +1,18 @@
 new fullpage('#fullPage', {
-    autoScrolling: false,
+    autoScrolling: true,
     navigation: true,
     navigationPosition: 'left',
     credits: false,
-    dragAndMove: true,
+    // dragAndMove: 'fingersonly',
+    recordHistory: true,
+    onLeave: function(origin, destination, direction, trigger){
+        setTimeout(scroll_handler, 100)
+        clearTimeout()
+    },
+    // beforeLeave: function(origin, destination, direction, trigger){
+    //     scroll_handler()
+    // },
+    fitToSection: true,
 })
 
 
@@ -33,31 +42,31 @@ const scroll_handler = () => {
     })
 }
 
-window.addEventListener('wheel', () => {
-    scroll_handler()
-    console.log(document.body.offsetTop)
-})
-
-window.addEventListener('keyup', e => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        scroll_handler()
-    }
-})
-
-window.addEventListener('keydown', e => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        scroll_handler()
-    }
-})
-
-window.addEventListener('drag', () => {
-    console.log('drag!')
-})
-
-nav_items.forEach(nav_item => {
-    nav_item.addEventListener('click', () => {
-        setTimeout(scroll_handler, 100)
-        clearTimeout()
-    })
-})
+// window.addEventListener('wheel', () => {
+//     scroll_handler()
+//     console.log(document.body.offsetTop)
+// })
+//
+// window.addEventListener('keyup', e => {
+//     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+//         scroll_handler()
+//     }
+// })
+//
+// window.addEventListener('keydown', e => {
+//     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+//         scroll_handler()
+//     }
+// })
+//
+// window.addEventListener('drag', () => {
+//     console.log('drag!')
+// })
+//
+// nav_items.forEach(nav_item => {
+//     nav_item.addEventListener('click', () => {
+//         setTimeout(scroll_handler, 100)
+//         clearTimeout()
+//     })
+// })
 

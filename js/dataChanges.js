@@ -17,12 +17,6 @@ const dataChanges = () => {
     }
 }
 
-const button_handler = () => {
-    const btn_text = document.querySelector('.btn_text')
-    if (window.innerWidth <=630){
-        btn_text.remove()
-    }
-}
+
 
 dataChanges()
-button_handler()
