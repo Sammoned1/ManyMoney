@@ -1,8 +1,9 @@
 new fullpage('#fullPage', {
-    autoScrolling: true,
+    autoScrolling: false,
     navigation: true,
     navigationPosition: 'left',
     credits: false,
+    dragAndMove: true,
 })
 
 
