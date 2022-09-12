@@ -328,11 +328,14 @@ ul li a.active span.white {
 @media (max-width: 630px) {
     .text__title {
         font-size: 48px;
+        margin-bottom: 35px;
     }
     .text, .main_text, .footer_text {
         font-size: 19px;
     }
-
+    .main_section{
+        margin-top: 40px;
+    }
     .footer_text{
         display: flex;
         flex-direction: column;
