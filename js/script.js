@@ -12,7 +12,7 @@ new fullpage('#fullPage', {
     // beforeLeave: function(origin, destination, direction, trigger){
     //     scroll_handler()
     // },
-    fitToSection: true,
+    // fitToSection: true,
 })
 
 
