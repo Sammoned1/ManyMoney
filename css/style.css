@@ -347,10 +347,15 @@ ul li a.active span.white {
         margin-right: 0;
     }
     .first_btn{
-        width: 65px;
+        height: 55px;
+        width: 55px;
         justify-content: center;
-        padding: 0 5px 0 0;
+        padding: 0 3px 0 0;
         border-radius: 50px;
+    }
+    .telegram_btn__icon{
+        height: 24px;
+        width: 24px;
     }
     .first_btn .btn_text{
         display: none;
