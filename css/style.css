@@ -272,8 +272,8 @@ ul li a.active span.white {
     }
 
     .title_number {
-        top: -43px;
-        left: -85px;
+        top: -63px;
+        left: -75px;
         font-size: 160px;
     }
 }
@@ -314,8 +314,8 @@ ul li a.active span.white {
         font-size: 60px;
     }
     .title_number {
-        top: -30px;
-        left: -60px;
+        top: -50px;
+        left: -57px;
         font-size: 120px;
     }
 }
@@ -349,15 +349,25 @@ ul li a.active span.white {
     .first_btn{
         width: 65px;
         justify-content: center;
-        padding: 0;
+        padding: 0 5px 0 0;
+        border-radius: 50px;
     }
     .first_btn .btn_text{
         display: none;
     }
     .title_number {
-        /*top: -21px;*/
-        /*left: -40px;*/
+        top: -38px;
+        left: -44px;
         font-size: 90px;
+    }
+    .footer_btn{
+        font-size: 18px;
+        width: 180px;
+        height: 55px;
+        padding: 20px;
+    }
+    .logo{
+        font-size: 24px;
     }
 }
 
@@ -366,7 +376,8 @@ ul li a.active span.white {
         font-size: 38px;
     }
     .title_number {
-        /*top: -30px;*/
+        font-size: 90px;
+        top: -40px;
         /*left: -40px;*/
     }
 }
@@ -382,7 +393,8 @@ ul li a.active span.white {
         margin-left: 20px;
     }
     .title_number {
-        /*top: -38px;*/
+        font-size: 72px;
+        top: -34px;
         /*left: -40px;*/
     }
 }
