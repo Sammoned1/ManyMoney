@@ -7,6 +7,9 @@
     justify-content: center;
     align-items: center;
 }
+.here_link{
+    font-weight: 900;
+}
 
 .very_beginning {
     justify-content: start;
@@ -64,6 +67,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
     position: relative;
+    letter-spacing: .1rem;
 }
 
 body::-webkit-scrollbar {
