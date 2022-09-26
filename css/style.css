@@ -407,6 +407,9 @@ ul li a.active span.white {
         top: -34px;
         /*left: -40px;*/
     }
+    .header{
+        height: 110px;
+    }
 }
 
 
